@@ -475,6 +475,8 @@
                             <property name="label" translatable="yes">_Presentation Mode</property>
                             <property name="use_underline">True</property>
                             <signal name="toggled" handler="ACTION_VIEW_PRESENTATION_MODE" swapped="no" />
+                            <accelerator key="F2" signal="activate"/>
+
                           </object>
                         </child>
                         <child>

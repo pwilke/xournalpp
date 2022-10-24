@@ -768,6 +768,9 @@ void Control::actionPerformed(ActionType type, ActionGroup group, GdkEvent* even
 
         case ACTION_VIEW_PRESENTATION_MODE:
             setViewPresentationMode(enabled);
+            setFullscreen(enabled);
+            this->win->setToolbarVisible(false);
+            this->getScrollHandler()->goToCurrentPage();
             break;
 
         case ACTION_MANAGE_TOOLBAR:

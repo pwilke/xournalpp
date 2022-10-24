@@ -32,6 +32,7 @@ public:
 public:
     void goToPreviousPage();
     void goToNextPage();
+    void goToCurrentPage();
 
     void goToLastPage();
     void goToFirstPage();

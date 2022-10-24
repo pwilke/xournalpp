@@ -22,6 +22,12 @@ void ScrollHandler::goToNextPage() {
     }
 }
 
+void ScrollHandler::goToCurrentPage() {
+  if (this->control->getWindow()) {
+    scrollToPage(this->control->getWindow()->getXournal()->getCurrentPage());
+  }
+}
+
 void ScrollHandler::goToLastPage() {
     if (this->control->getWindow()) {
         scrollToPage(this->control->getDocument()->getPageCount() - 1);
